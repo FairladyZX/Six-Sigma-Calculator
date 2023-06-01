@@ -1,0 +1,141 @@
+
+@font-face {
+  font-family: 'Lulo-Clean';
+  src: url('font/LuloClean/@font-face/39a2c7f346d5cfae7045aeb2fb50d9ad.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Questrial';
+  src: url('font/Questrial/Questrial-Regular.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+.CSScalculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #4ecac7;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #888888;
+  max-width:850px ;   
+}
+
+.centered-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.centered-heading h2 {
+  margin: 0;
+  font-family: 'Lulo-Clean', sans-serif;
+  font-weight: lighter;
+  font-size: 24px;
+}
+.frames-container {
+  display: flex;
+  justify-content: center;
+}
+
+.frame {
+  border: 1px solid #555555;
+  background-color: #9CDDEB;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: 'Questrial';
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.frame2 {
+  border: 1px solid #555555;
+  background-color: #9CDDEB;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+  width: 100%;
+  max-width: 400px;
+  position: relative; 
+  font-family: 'Questrial';
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+
+#calculate{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #555555;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-out;
+  margin-left: 10px;
+}
+
+#calculate:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#Opportunities {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 10px #888888;
+}
+
+#Defects{
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px #888888;
+}
+
+#DPMO, #Defect, #Yield, #processSigma {
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 10px #888888;
+  background-color: #f2f2f2;
+  pointer-events: none;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.input-row label {
+  flex: 160px; /* Adjust the width as needed */
+}
+
+.input-row input {
+  flex: 1;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #888888;
+  background-color: #f2f2f2;
+}
+
+.logo-image {
+  position: absolute;
+  top: 93%;
+  right: -40px; /* Adjust the value as needed */
+  transform: translateY(-50%);
+  width: 300px;
+  height: auto;
+}
+
+#Titles{
+  font-family: 'LuloClean', sans-serif;
+}

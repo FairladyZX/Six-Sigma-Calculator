@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="SScalculator.css" />
+    <title>Document</title>
+    <style>
+      .SScalculator {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="CSScalculator">
+        <div class="centered-heading">
+          <h2 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)">Six Sigma</h2>
+          <hr />
+
+          <h2
+            style="color: #555555; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)"
+          >
+            Calculator
+          </h2>
+        </div>
+        <div class="frames-container">
+          <div class="frame">
+            <h3 class="Titles">
+              Enter the number of opportunities and defects in your process, and
+              then click on the "Calculate" button to obtain the results.
+            </h3>
+            <label for="Oppo">Opportunities:</label><br />
+            <input id="Opportunities" type="text" /><br />
+            <label for="Def">Defects:</label><br />
+            <input id="Defects" type="text" /> <br />
+            <button id="calculate">Calculate</button>
+            <p>* 1.5 Sigma shift has been included in the calculation</p>
+          </div>
+          <div class="frame2">
+            <h3 class="Titles">
+              The fields below will show the results of the process performance
+            </h3>
+            <div class="input-row">
+              <label for="DPMO">DPMO:</label>
+              <input type="text" name="DPMO" id="DPMO" class="grayed-out" />
+            </div>
+            <div class="input-row">
+              <label for="Defect">Defects(%):</label>
+              <input type="text" name="Defect" id="Defect" />
+            </div>
+            <div class="input-row">
+              <label for="Yield">Yield(%):</label>
+              <input type="text" name="Yield" id="Yield" />
+            </div>
+            <div class="input-row">
+              <label for="processSigma">Process Sigma:</label>
+              <input type="text" name="processSigma" id="processSigma" />
+            </div>
+            <div>
+              <img
+                src="/assets/images/Logo.jpeg"
+                alt="Wave Six Sigma Calculator"
+                class="logo-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+    <script src="SScalculator.js"></script>
+  </body>
+</html>
