@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'Lulo-Clean';
   src: url('font/LuloClean/@font-face/39a2c7f346d5cfae7045aeb2fb50d9ad.ttf') format('truetype');
@@ -21,7 +20,9 @@
   background-color: #4ecac7;
   padding: 20px;
   box-shadow: 0px 0px 10px #888888;
-  max-width:850px ;   
+  max-width: 850px;
+  width: 100%;
+  box-sizing: border-box; /* Ensure the padding and border are included in the width */
 }
 
 .centered-heading {
@@ -35,9 +36,12 @@
   font-weight: lighter;
   font-size: 24px;
 }
+
 .frames-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Align frames side by side */
+  flex-wrap: wrap; /* Allow the frames to wrap to the next line on smaller screens */
+  gap: 10px
 }
 
 .frame {
@@ -48,6 +52,10 @@
   font-family: 'Questrial';
   letter-spacing: 1px;
   line-height: 1.5;
+  width: 100%; /* Take up the full width of the container */
+  max-width: 400px; /* Limit the width on larger screens */
+  margin-bottom: 10px; /* Add some spacing between frames */
+  box-sizing: border-box; /* Ensure the padding and border are included in the width */
 }
 
 .frame2 {
@@ -55,17 +63,17 @@
   background-color: #9CDDEB;
   padding: 10px;
   border-radius: 10px;
-  margin-left: 20px;
   width: 100%;
   max-width: 400px;
-  position: relative; 
+  position: relative;
   font-family: 'Questrial';
   letter-spacing: 1px;
   line-height: 1.5;
+  margin-bottom: 10px; /* Add some spacing between frames */
+  box-sizing: border-box; /* Ensure the padding and border are included in the width */
 }
 
-
-#calculate{
+#calculate {
   display: inline-block;
   padding: 10px 20px;
   background-color: #555555;
@@ -92,7 +100,7 @@
   box-shadow: 0px 0px 10px #888888;
 }
 
-#Defects{
+#Defects {
   margin-top: 10px;
   padding: 10px;
   border-radius: 30px;
@@ -100,7 +108,10 @@
   box-shadow: 0px 0px 10px #888888;
 }
 
-#DPMO, #Defect, #Yield, #processSigma {
+#DPMO,
+#Defect,
+#Yield,
+#processSigma {
   padding: 5px;
   border-radius: 10px;
   margin-bottom: 15px;
@@ -116,7 +127,7 @@
 }
 
 .input-row label {
-  flex: 160px; /* Adjust the width as needed */
+  flex: 0 0 160px; /* Adjust the width as needed */
 }
 
 .input-row input {
@@ -136,6 +147,6 @@
   height: auto;
 }
 
-#Titles{
+#Titles {
   font-family: 'LuloClean', sans-serif;
 }
