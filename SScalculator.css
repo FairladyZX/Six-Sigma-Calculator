@@ -56,6 +56,7 @@
   max-width: 400px; /* Limit the width on larger screens */
   margin-bottom: 10px; /* Add some spacing between frames */
   box-sizing: border-box; /* Ensure the padding and border are included in the width */
+  
 }
 
 .frame2 {
@@ -71,7 +72,9 @@
   line-height: 1.5;
   margin-bottom: 10px; /* Add some spacing between frames */
   box-sizing: border-box; /* Ensure the padding and border are included in the width */
+ 
 }
+
 
 #calculate {
   display: inline-block;
@@ -118,6 +121,8 @@
   box-shadow: 0px 0px 10px #888888;
   background-color: #f2f2f2;
   pointer-events: none;
+  flex-shrink:1;
+  flex-basis: 50%; 
 }
 
 .input-row {
@@ -137,6 +142,29 @@
   box-shadow: 0px 0px 10px #888888;
   background-color: #f2f2f2;
 }
+
+@media screen and (max-width: 600px) {
+  .input-row {
+    flex-direction: column; /* Stack the label and input vertically */
+  }
+
+  .input-row label {
+    margin-top: -10px;
+    margin-bottom: -130px; /* Add spacing between label and input */
+  }
+  .frame2 {
+    padding-bottom: 50px; /* Add padding between the frame content and the logo image */
+    position: relative; /* Ensure the frame is relatively positioned */
+  }
+
+  .frame2 .logo-image {
+    position: absolute; /* Position the logo image relative to the frame */
+    bottom: -20px; /* Adjust the value as needed to position the logo image within the frame */
+    right: 45px; /* Adjust the value as needed to position the logo image within the frame */
+    margin-top: 5px; /* Add margin to create spacing between the last input box and the logo image */
+  }
+}
+
 
 .logo-image {
   position: absolute;
